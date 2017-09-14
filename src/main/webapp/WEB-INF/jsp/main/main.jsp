@@ -21,7 +21,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-	<meta name="description" content="goGLOBAL">
+	<meta name="description" content="UCS Admin">
 	<meta name="author" content="한국무역정보통신">
 
 	<script src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
@@ -353,7 +353,7 @@
 						</ul>
 					</div>
 					<div class="copy">
-						<p>Copyright 2016 KTNET<br /> All Right Reserved.</p>
+						<p>Copyright 2017 UCS<br /> All Right Reserved.</p>
 					</div>
 				</div>
 			</div>

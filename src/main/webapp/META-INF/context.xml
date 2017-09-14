@@ -38,11 +38,11 @@
               maxTotal="10"
               maxIdle="10"
               maxWaitMillis="60000"
-              username="ucs"
-              password="ucs"
+              username="UCS_FRAME"
+              password="qazxsw"
               removeAbandonedTimeout="50000"
               logAbandoned="true"
-              url="jdbc:oracle:thin:@127.0.0.1:1521:orcl"
+              url="jdbc:oracle:thin:@220.76.203.39:1521:UCS"
     />
 
     <Resource name="jdbc/ucpappJNDI"
@@ -53,11 +53,11 @@
               maxTotal="10"
               maxIdle="5"
               maxWaitMillis="60000"
-              username="ucs"
-              password="ucs"
+              username="UCS_FRAME"
+              password="qazxsw"
               removeAbandonedTimeout="50000"
               logAbandoned="true"
-              url="jdbc:oracle:thin:@127.0.0.1:1521:orcl"
+              url="jdbc:oracle:thin:@220.76.203.39:1521:UCS"
     />
     
     <Resource name="jdbc/zipJNDI"
@@ -68,11 +68,11 @@
             maxTotal="10"
             maxIdle="5" 
             maxWaitMillis="60000"
-              username="ucs"
-              password="ucs"
-              removeAbandonedTimeout="50000"
-              logAbandoned="true"
-              url="jdbc:oracle:thin:@127.0.0.1:1521:orcl"
+            username="UCS_FRAME"
+            password="qazxsw"
+            removeAbandonedTimeout="50000"
+            logAbandoned="true"
+            url="jdbc:oracle:thin:@220.76.203.39:1521:UCS"
     />
     
     <Resource name="jdbc/tradeJNDI"
@@ -83,10 +83,10 @@
             maxTotal="10"
             maxIdle="5" 
             maxWaitMillis="60000"
-              username="ucs"
-              password="ucs"
-              removeAbandonedTimeout="50000"
-              logAbandoned="true"
-              url="jdbc:oracle:thin:@127.0.0.1:1521:orcl"
+            username="UCS_FRAME"
+            password="qazxsw"
+            removeAbandonedTimeout="50000"
+            logAbandoned="true"
+            url="jdbc:oracle:thin:@220.76.203.39:1521:UCS"
     />
 </Context>

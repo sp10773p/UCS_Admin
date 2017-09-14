@@ -8,7 +8,7 @@
 <html lang="ko">
 <head>
 	<meta charset="utf-8">
-	<title>goGLOBAL user page</title>
+	<title>UCS Admin user page</title>
 	<link rel="stylesheet" type="text/css" href="<c:url value='/css/main/base.css'/>"/>
 	<link rel="stylesheet" type="text/css" href="<c:url value='/css/mainlayout.css'/>"/>
 	<link rel="stylesheet" type="text/css" href="<c:url value='/css/expandcollapse.css'/>"/>

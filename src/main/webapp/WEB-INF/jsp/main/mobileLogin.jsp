@@ -16,7 +16,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>로그인 | goGlobal</title>
+    <title>로그인 | UCS Admin</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="keywords" content="" />
@@ -108,7 +108,7 @@
 
     <div id="footer">
         <h1>ktnet</h1>
-        <p class="copy">Copyright 2016 KTNET All Right Reserved.</p>
+        <p class="copy">Copyright 2017 UCS All Right Reserved.</p>
     </div>
     <!--//footer-->
 </div>

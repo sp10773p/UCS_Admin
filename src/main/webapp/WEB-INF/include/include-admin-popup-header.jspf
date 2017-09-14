@@ -8,8 +8,8 @@
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<meta name="description" content="goGLOBAL">
-<meta name="author" content="한국무역정보통신">
+<meta name="description" content="UCS Admin">
+<meta name="author" content="UCS System">
 
 <link rel="stylesheet" href="${pageContext.request.contextPath}/css/admin/base.css"/>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/css/admin/admin.css"/>

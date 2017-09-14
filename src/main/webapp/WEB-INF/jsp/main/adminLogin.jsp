@@ -89,10 +89,9 @@
 <div id="loginWrap" >
     <header>
         <div>
-            <h1><a href="#" id="logo_login"><img src="/images/admin/logo_login.png" alt="goGLOBAL" /></a></h1>
+            <h1><a href="#" id="logo_login"><%--<img src="/images/admin/logo_login.png" alt="UCS Admin" />--%></a></h1>
             <div>
-                <p>전자상거래 수출지원플랫폼</p>
-                <p>KTNET goGLOBAL</p>
+                <p>UCS System</p>
                 <p>Administrator</p>
             </div>
         </div>
@@ -117,7 +116,7 @@
         </form>
     </div>
     <div class="copy_login">
-        <p>Copyright &copy;  2016 KTNET All Rights Reservd.</p>
+        <p>Copyright &copy;  2017 UCS All Rights Reservd.</p>
     </div>
 </div> <!-- //wrap -->
 <div id="layer"></div>

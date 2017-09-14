@@ -17,7 +17,7 @@
     <meta name="Author" content="SY_Kim">
     <meta name="keywords" content="" />
     <meta name="description" content="" />
-    <title>goGLOBAL</title>
+    <title>UCS Admin</title>
     <style type="text/css" media="screen">
         @font-face{
             font-family:NG;
