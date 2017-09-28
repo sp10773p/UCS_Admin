@@ -17,7 +17,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>UCS Admin</title>
+    <title>goGlobal</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" /> <!--모바일 뷰 설정-->
     <meta name="keywords" content="" />
@@ -137,7 +137,7 @@
 <div id="wrap">
     <div id="header">
         <div class="top">
-            <h1><a href="<c:url value='/mobile'/>">UCS Admin</a></h1>
+            <h1><a href="<c:url value='/mobile'/>">goGlobal</a></h1>
             <button type="button" class="btn_menu">메뉴열기</button>
         </div>
 

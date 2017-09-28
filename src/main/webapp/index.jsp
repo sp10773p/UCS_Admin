@@ -16,7 +16,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>UCS Admin</title>
+	<title>goGLOBAL</title>
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/css/main/base.css"/>
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/css/main/main.css"/>
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/css/main/layerPop.css"/>

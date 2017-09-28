@@ -3,10 +3,10 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          id="goGLOBAL" version="3.0">
 
-    <display-name>UCS_Admin</display-name>
+    <display-name>goGLOBAL</display-name>
     <context-param>
         <param-name>webAppRootKey</param-name>
-        <param-value>UCS_Admin.root</param-value>
+        <param-value>goglobal.root</param-value>
     </context-param>
 
     <listener>
@@ -28,9 +28,7 @@
 
     <context-param>
         <param-name>spring.profiles.active</param-name>
-        <param-value>devlocal</param-value>
-        <!--<param-value>development</param-value>-->
-        <!--<param-value>production</param-value>-->
+        <param-value>production</param-value>
     </context-param>
 
     <servlet>
@@ -72,7 +70,7 @@
         <servlet-name>mobile</servlet-name>
         <url-pattern>/mobile</url-pattern>
     </servlet-mapping>
-    <filter>
+<filter>
         <filter-name>encodingFilter</filter-name>
         <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
         <init-param>
@@ -109,6 +107,52 @@
         <session-timeout>30</session-timeout>
 		<tracking-mode>COOKIE</tracking-mode>
     </session-config>
+    
+    <display-name>UbiGateway</display-name>
+	<servlet>
+		<servlet-name>UbiForm</servlet-name>
+		<servlet-class>com.ubidcs.report.gateway.UbiForm</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UbiData</servlet-name>
+		<servlet-class>com.ubidcs.report.gateway.UbiData</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UbiAdmin</servlet-name>
+		<servlet-class>com.ubidcs.report.gateway.UbiAdmin</servlet-class>
+	</servlet>
+	<!-- Servlet for UbiDaemon -->
+	<servlet>
+		<servlet-name>UbiGateway</servlet-name>
+		<servlet-class>com.ubidcs.report.gateway.UbiGateway</servlet-class>
+	</servlet>
+	<!-- Servlet for DRM -->
+	<servlet>
+		<servlet-name>UbiServer</servlet-name>
+		<servlet-class>com.ubidcs.report.gateway.UbiServer</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UbiForm</servlet-name>
+		<url-pattern>/UbiForm.jsp</url-pattern>
+	</servlet-mapping>	
+	<servlet-mapping>
+		<servlet-name>UbiData</servlet-name>
+		<url-pattern>/UbiData.jsp</url-pattern>
+	</servlet-mapping>	
+	<servlet-mapping>
+		<servlet-name>UbiAdmin</servlet-name>
+		<url-pattern>/UbiAdmin.jsp</url-pattern>
+	</servlet-mapping>	
+	<servlet-mapping>
+		<servlet-name>UbiGateway</servlet-name>
+		<url-pattern>/UbiGateway.jsp</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UbiServer</servlet-name>
+		<url-pattern>/UbiServer.jsp</url-pattern>
+	</servlet-mapping>	
+    
     <error-page>
         <error-code>404</error-code>
         <location>/WEB-INF/jsp/error/error404.jsp</location>

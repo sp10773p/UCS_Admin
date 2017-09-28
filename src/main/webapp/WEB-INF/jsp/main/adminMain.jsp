@@ -18,12 +18,12 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <title>UCS Admin</title>
+    <title>goGLOBAL 어드민사이트</title>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="description" content="UCS Admin">
-    <meta name="author" content="UCS System">
+    <meta name="description" content="goGLOBAL 어드민사이트">
+    <meta name="author" content="한국무역정보통신">
 
     <script src="<c:url value='/js/jquery.min.js'/>"></script>
 
@@ -202,7 +202,7 @@
         </div>
         <!-- //lnb -->
         <div class="copy">
-            <p>Copyright 2017 UCS All Rights Reservd.</p>
+            <p>Copyright 2016 KTNET All Rights Reservd.</p>
         </div>
     </div>
     <%-- left menu--%>

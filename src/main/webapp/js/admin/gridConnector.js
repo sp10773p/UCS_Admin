@@ -400,9 +400,8 @@ GridWrapper.prototype = {
             $('#' + this.bodyTableId).width(this.totWidth+"px");
 
         }else{
-
+            $('#' + this.headerTableId).width("99.99%");
             $('#' + this.bodyTableId).width("99.99%");
-            $('#' + this.headerTableId).width($('#' + this.bodyTableId).width());
 
         }
     },
@@ -412,14 +411,7 @@ GridWrapper.prototype = {
         var obj = $('#' + this.bodyId);
 
         if(obj.get(0) && obj.get(0).scrollHeight > obj.innerHeight()){ // 세로 스크롤바가 있을때만
-
-        	var cnt  = (this.PAGE_INDEX+1) * this.PAGE_ROW;
-
-            if(cnt - this.getSize() >= this.PAGE_ROW){
-            	return;
-            }
-
-            if (obj[0].scrollHeight - Math.round(obj.scrollTop()) <= obj.outerHeight()){
+            if (obj[0].scrollHeight - obj.scrollTop() <= obj.outerHeight()){
                 this.PAGE_INDEX++;
                 this.IS_REQ_SCROLL = true;
                 this.requestToServer();
@@ -485,19 +477,19 @@ GridWrapper.prototype = {
             var a = $('#' + this.paramsFormId).serializeArray();
             $.each(a, function () {
                 //if(this.value != null && this.value != ''){
-                    // 날짜필드이면 '-' 삭제
-                    if($('#'+this.name).is('[datefield]')){
-                        this.value = this.value.trim().replace(/\/|-/g, '');
-                    }
+                // 날짜필드이면 '-' 삭제
+                if($('#'+this.name).is('[datefield]')){
+                    this.value = this.value.trim().replace(/\/|-/g, '');
+                }
 
-                    var tagName = ($('input[name="' + this.name + '"]').length > 0 ? $('input[name="' + this.name + '"]')[0].tagName : "");
-                    var tagType = ($('input[name="' + this.name + '"]').length > 0 ? $('input[name="' + this.name + '"]')[0].type : "");
-                    if(tagName.toUpperCase() == "INPUT" && tagType.toUpperCase() == "CHECKBOX"){
-                        var arr = $('input[name="' + this.name + '"]').serializeArray();
-                        var valueArray = [];
-                        $.each(arr, function () {
-                            valueArray.push(this.value);
-                        })
+                var tagName = ($('input[name="' + this.name + '"]').length > 0 ? $('input[name="' + this.name + '"]')[0].tagName : "");
+                var tagType = ($('input[name="' + this.name + '"]').length > 0 ? $('input[name="' + this.name + '"]')[0].type : "");
+                if(tagName.toUpperCase() == "INPUT" && tagType.toUpperCase() == "CHECKBOX"){
+                    var arr = $('input[name="' + this.name + '"]').serializeArray();
+                    var valueArray = [];
+                    $.each(arr, function () {
+                        valueArray.push(this.value);
+                    })
 
                     requestParam[this.name] = valueArray;
                 }else{
